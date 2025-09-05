@@ -61,7 +61,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Natural Brand Colors
+				'coconut-brown': {
+					DEFAULT: 'hsl(var(--coconut-brown))',
+					light: 'hsl(var(--coconut-brown-light))',
+					dark: 'hsl(var(--coconut-brown-dark))'
+				},
+				'grass-green': {
+					DEFAULT: 'hsl(var(--grass-green))',
+					light: 'hsl(var(--grass-green-light))',
+					dark: 'hsl(var(--grass-green-dark))'
+				},
+				'earth-beige': 'hsl(var(--earth-beige))',
+				'natural-cream': 'hsl(var(--natural-cream))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +97,50 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'plant-growth': {
+					'0%': {
+						transform: 'scaleY(0.1) scaleX(0.8)',
+						opacity: '0.5'
+					},
+					'50%': {
+						transform: 'scaleY(0.6) scaleX(0.9)',
+						opacity: '0.8'
+					},
+					'100%': {
+						transform: 'scaleY(1) scaleX(1)',
+						opacity: '1'
+					}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-right': {
+					'0%': {
+						transform: 'translateX(100%)'
+					},
+					'100%': {
+						transform: 'translateX(-100%)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'plant-growth': 'plant-growth 2s ease-out forwards',
+				'fade-in-up': 'fade-in-up 0.6s ease-out',
+				'slide-right': 'slide-right 20s linear infinite'
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				serif: ['Playfair Display', 'serif']
 			}
 		}
 	},

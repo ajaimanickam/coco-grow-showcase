@@ -1,21 +1,12 @@
-import { useState, useEffect } from 'react';
-import LoadingScreen from '@/components/LoadingScreen';
+import { useEffect } from 'react';
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Products from '@/components/Products';
-import Testimonials from '@/components/Testimonials';
-import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
-const Index = () => {
-  const [showLoading, setShowLoading] = useState(true);
-
-  const handleLoadingComplete = () => {
-    setShowLoading(false);
-  };
-
+const AboutPage = () => {
   useEffect(() => {
+    document.title = 'About Us - Nature\'s Coir Pith | Family-Run Coconut Fiber Business';
+    
     // Scroll animation setup
     const observerOptions = {
       threshold: 0.1,
@@ -30,32 +21,34 @@ const Index = () => {
       });
     }, observerOptions);
 
-    // Observe all elements with fade-in-up class
     const animatedElements = document.querySelectorAll('.animate-fade-in-up');
     animatedElements.forEach((el) => observer.observe(el));
 
     return () => {
       animatedElements.forEach((el) => observer.unobserve(el));
     };
-  }, [showLoading]);
-
-  if (showLoading) {
-    return <LoadingScreen onComplete={handleLoadingComplete} />;
-  }
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main>
-        <Hero />
+      <main className="pt-20">
+        <div className="bg-gradient-hero py-20">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-6xl font-serif font-bold text-natural-cream mb-6 animate-fade-in-up">
+              About Nature's Coir Pith
+            </h1>
+            <p className="text-xl text-natural-cream/90 max-w-3xl mx-auto animate-fade-in-up">
+              Discover the story behind our family-run business and our commitment to 
+              providing premium coconut fiber products for sustainable gardening.
+            </p>
+          </div>
+        </div>
         <About />
-        <Products />
-        <Testimonials />
-        <Contact />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default AboutPage;

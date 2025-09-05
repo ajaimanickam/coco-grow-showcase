@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Coir Pith Company Design System - Coconut Brown to Grass Green Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Brand Colors - Natural Earth Tones */
+    --coconut-brown: 25 65% 35%;
+    --coconut-brown-light: 25 60% 45%;
+    --coconut-brown-dark: 25 70% 25%;
+    --grass-green: 88 50% 55%;
+    --grass-green-light: 88 45% 65%;
+    --grass-green-dark: 88 55% 45%;
+    --earth-beige: 35 25% 85%;
+    --natural-cream: 35 30% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Base System Colors */
+    --background: 35 30% 98%;
+    --foreground: 25 70% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --card: 35 30% 97%;
+    --card-foreground: 25 60% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: 35 30% 98%;
+    --popover-foreground: 25 70% 15%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --primary: 25 65% 35%;
+    --primary-foreground: 35 30% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: 88 50% 55%;
+    --secondary-foreground: 35 30% 98%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 40% 40%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 88 45% 65%;
+    --accent-foreground: 25 70% 15%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 35 30% 98%;
 
-    --radius: 0.5rem;
+    --border: 35 15% 85%;
+    --input: 35 15% 90%;
+    --ring: 25 65% 35%;
+
+    --radius: 0.75rem;
+
+    /* Beautiful Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--coconut-brown)) 0%, hsl(var(--coconut-brown-light)) 50%, hsl(var(--grass-green)) 100%);
+    --gradient-section: linear-gradient(to bottom, hsl(var(--coconut-brown-light) / 0.1), hsl(var(--grass-green) / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(var(--natural-cream)), hsl(var(--earth-beige)));
+    --gradient-button: linear-gradient(135deg, hsl(var(--grass-green)), hsl(var(--grass-green-dark)));
+    --gradient-overlay: linear-gradient(to bottom, hsl(25 65% 35% / 0.7), hsl(88 50% 55% / 0.7));
+
+    /* Elegant Shadows */
+    --shadow-natural: 0 4px 20px hsl(var(--coconut-brown) / 0.15);
+    --shadow-card: 0 2px 10px hsl(var(--coconut-brown) / 0.1);
+    --shadow-button: 0 4px 15px hsl(var(--grass-green) / 0.3);
+    --shadow-floating: 0 8px 30px hsl(var(--coconut-brown) / 0.2);
+
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +82,50 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode with earthy tones */
+    --background: 25 70% 8%;
+    --foreground: 35 30% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 60% 12%;
+    --card-foreground: 35 30% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 60% 10%;
+    --popover-foreground: 35 30% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 35 30% 95%;
+    --primary-foreground: 25 70% 15%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 88 40% 45%;
+    --secondary-foreground: 35 30% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 40% 20%;
+    --muted-foreground: 35 20% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 88 35% 55%;
+    --accent-foreground: 25 70% 15%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 35 30% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 25 40% 25%;
+    --input: 25 40% 20%;
+    --ring: 88 50% 55%;
+
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(25 70% 15%) 0%, hsl(25 60% 25%) 50%, hsl(88 40% 35%) 100%);
+    --gradient-section: linear-gradient(to bottom, hsl(25 60% 15% / 0.3), hsl(88 40% 25% / 0.3));
+    --gradient-card: linear-gradient(145deg, hsl(25 50% 15%), hsl(25 40% 20%));
+    --gradient-button: linear-gradient(135deg, hsl(88 40% 45%), hsl(88 45% 35%));
+    --gradient-overlay: linear-gradient(to bottom, hsl(25 70% 10% / 0.8), hsl(88 40% 20% / 0.8));
+
+    --sidebar-background: 25 60% 10%;
+    --sidebar-foreground: 35 30% 90%;
+    --sidebar-primary: 88 50% 55%;
+    --sidebar-primary-foreground: 25 70% 15%;
+    --sidebar-accent: 25 40% 20%;
+    --sidebar-accent-foreground: 35 30% 90%;
+    --sidebar-border: 25 40% 25%;
+    --sidebar-ring: 88 50% 55%;
   }
 }
 
@@ -100,6 +135,98 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Beautiful Background Gradients */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-section {
+    background: var(--gradient-section);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .bg-gradient-button {
+    background: var(--gradient-button);
+  }
+
+  /* Natural Shadows */
+  .shadow-natural {
+    box-shadow: var(--shadow-natural);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-floating {
+    box-shadow: var(--shadow-floating);
+  }
+
+  /* Smooth Transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  /* Natural Text Colors */
+  .text-coconut-brown {
+    color: hsl(var(--coconut-brown));
+  }
+  
+  .text-grass-green {
+    color: hsl(var(--grass-green));
+  }
+  
+  .text-natural-cream {
+    color: hsl(var(--natural-cream));
+  }
+
+  /* Scroll Animation Classes */
+  .animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .animate-fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Plant Growing Animation */
+  .plant-grow {
+    transform-origin: bottom center;
+    animation: plant-growth 2s ease-out forwards;
+  }
+  
+  @keyframes plant-growth {
+    0% {
+      transform: scaleY(0.1) scaleX(0.8);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scaleY(0.6) scaleX(0.9);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scaleY(1) scaleX(1);
+      opacity: 1;
+    }
   }
 }
