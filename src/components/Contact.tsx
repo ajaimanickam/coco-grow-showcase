@@ -37,19 +37,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91 98765 43210', '+91 87654 32109'],
+      details: ['+91 80129 42377'],
       description: 'Mon-Sat: 9 AM - 7 PM',
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@naturescoirpith.com', 'orders@naturescoirpith.com'],
+      details: ['info@primecocopeat.com'],
       description: 'We reply within 24 hours',
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['123 Coconut Grove Road', 'Village: Kallapuram, Dist: Salem', 'Tamil Nadu - 636106'],
+      details: ['Prakash', 'Pollachi, Coimbatore', 'Tamil Nadu, India'],
       description: 'Open for visits by appointment',
     },
     {

@@ -18,22 +18,23 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
-          {/* Badge */}
-          <div className="inline-flex items-center space-x-2 bg-natural-cream/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-            <Leaf className="text-grass-green-light" size={20} />
-            <span className="text-natural-cream font-medium">Premium Coconut Fiber Products</span>
+          {/* Marquee Text */}
+          <div className="inline-flex items-center space-x-2 bg-natural-cream/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 overflow-hidden">
+            <span className="text-natural-cream font-medium animate-marquee whitespace-nowrap">
+              🌱 100% Organic • Premium Coco Peat • Sustainable Farming • Global Exports • Trusted Quality 🌱
+            </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-natural-cream mb-6 leading-tight">
-            Nature's{' '}
-            <span className="text-grass-green-light">Coir Pith</span>
+            Prime{' '}
+            <span className="text-grass-green-light">Coco Peat</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-natural-cream/90 mb-8 max-w-3xl mx-auto font-light">
-            Sustainable, high-quality coconut fiber products for modern gardening and farming. 
-            From our family to your garden.
+            Handpicked with care and utmost quality from Pollachi. 
+            Sustainable coco peat & coir pith products for global markets.
           </p>
 
           {/* Stats */}

@@ -39,34 +39,33 @@ const About = () => {
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Founded on the principles of sustainability and quality, Nature's Coir Pith has been 
-            serving gardening enthusiasts and farmers for over 2 years with premium coconut fiber products.
+            Founded by Prakash in Pollachi, Prime Coco Peat provides export-quality coco peat products 
+            engineered for consistent expansion, excellent water retention and low EC.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-fade-in-up">
             <h3 className="text-2xl md:text-3xl font-serif font-semibold text-primary mb-6">
-              From Village Roots to Your Garden
+              From Pollachi to Global Markets
             </h3>
             
             <div className="space-y-4 text-muted-foreground">
               <p className="text-lg">
-                Our journey began in the coconut groves of rural India, where our family has been 
-                involved in coconut farming for generations. We recognized the incredible potential 
-                of coir pith - a natural byproduct that was often overlooked.
+                Founded by Prakash in Pollachi, Prime Coco Peat provides export-quality coco peat products 
+                engineered for consistent expansion, excellent water retention and low EC.
               </p>
               
               <p className="text-lg">
-                What started as a small family initiative has grown into a trusted business that 
-                supplies high-quality coir pith products to gardeners, nurseries, and farmers 
-                across the region. Our commitment to quality and sustainability remains unchanged.
+                We serve nurseries, hydroponic growers and exporters around the world with reliable, 
+                sustainably processed coir products. Our commitment to quality ensures every batch 
+                meets international standards.
               </p>
               
               <p className="text-lg">
-                Every product that leaves our facility carries with it the dedication of our family 
-                and the rich heritage of traditional coconut farming, combined with modern processing 
-                techniques to ensure the best growing medium for your plants.
+                Our products feature low EC, screened & buffered options on request, with uniform expansion 
+                and high water retention. We also offer custom packaging and private labeling to meet 
+                your specific business needs.
               </p>
             </div>
           </div>

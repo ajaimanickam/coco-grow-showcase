@@ -24,13 +24,13 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-button rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">N</span>
+              <span className="text-white font-bold text-lg">P</span>
             </div>
             <div>
               <h1 className="text-xl font-serif font-semibold text-primary">
-                Nature's Coir Pith
+                Prime Coco Peat
               </h1>
-              <p className="text-xs text-muted-foreground">Premium Coconut Fiber</p>
+              <p className="text-xs text-muted-foreground">Handpicked from Pollachi</p>
             </div>
           </Link>
 
@@ -55,7 +55,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone size={16} />
-              <span>+91 98765 43210</span>
+              <span>+91 80129 42377</span>
             </div>
             <Button variant="default" size="sm" className="bg-gradient-button border-0 hover:opacity-90">
               Get Quote
@@ -94,11 +94,11 @@ const Header = () => {
               <div className="px-4 py-3 border-t border-border mt-4">
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
                   <Phone size={16} />
-                  <span>+91 98765 43210</span>
+                  <span>+91 80129 42377</span>
                 </div>
                 <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-4">
                   <Mail size={16} />
-                  <span>info@naturescoirpith.com</span>
+                  <span>info@primecocopeat.com</span>
                 </div>
                 <Button className="w-full bg-gradient-button border-0 hover:opacity-90">
                   Get Quote

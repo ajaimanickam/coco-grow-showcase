@@ -9,32 +9,32 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: 'Coco Pith Bricks',
+      name: 'Coco Peat Blocks (5kg)',
       image: cocoPithBricks,
-      price: 'From ₹25/brick',
-      description: 'Compressed coconut fiber blocks that expand when water is added. Perfect for seed starting, potting mixes, and soil amendment.',
-      features: ['High water retention', 'Excellent drainage', 'pH neutral', 'Compact storage'],
+      price: 'MOQ: 1 x 20ft container',
+      description: 'High-density 5kg blocks that expand to ~15-18 L. Low EC options available. Ideal for potting mixes & propagation.',
+      features: ['30 x 30 x 12 cm', 'EC: < 0.5 mS/cm', 'Compression: 5:1', 'Shrink-wrapped'],
       icon: Package,
       popular: true,
     },
     {
       id: 2,
-      name: 'Loose Coco Pith',
-      image: looseCocoPith,
-      price: 'From ₹40/kg',
-      description: 'Ready-to-use loose coconut fiber perfect for immediate gardening needs. Ideal for container gardening and raised beds.',
-      features: ['Ready to use', 'Natural texture', 'Organic growing medium', 'Weed-free'],
-      icon: Droplets,
+      name: 'Grow Bags',
+      image: growBags,
+      price: 'MOQ: 5,000 bags',
+      description: 'Pre-filled grow bags for vegetables & flowers. Custom mixes & perforations available for greenhouse applications.',
+      features: ['100 x 20 x 15 cm', 'EC: < 0.5 mS/cm', 'Pre-expanded ready', 'Poly bag packaging'],
+      icon: Sprout,
       popular: false,
     },
     {
       id: 3,
-      name: 'Grow Bags',
-      image: growBags,
-      price: 'From ₹15/bag',
-      description: 'Pre-filled grow bags with premium coco pith mix. Available in various sizes for different plants and growing needs.',
-      features: ['Pre-filled & ready', 'Multiple sizes', 'Drainage holes', 'Durable fabric'],
-      icon: Sprout,
+      name: 'Loose Coco Peat',
+      image: looseCocoPith,
+      price: 'MOQ: 500 bags',
+      description: 'Screened loose substrate for blending and top-dressing. Great water retention and aeration characteristics.',
+      features: ['Bulk / Custom size', 'EC: < 1.0 mS/cm', 'Loose fill format', '25kg / 50kg bags'],
+      icon: Droplets,
       popular: false,
     },
   ];
@@ -49,12 +49,12 @@ const Products = () => {
           </div>
           
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
-            Premium Coir Pith Products
+            Export Quality Coco Peat Products
           </h2>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Choose from our range of high-quality coconut fiber products, each carefully processed 
-            to provide the best growing medium for your plants.
+            Choose from our range of export-quality coco peat products, engineered for consistent 
+            expansion, excellent water retention and low EC levels.
           </p>
         </div>
 
